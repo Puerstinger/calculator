@@ -13,6 +13,31 @@
 			var num2=document.getElementById('snumber').value*1.0;
 			document.getElementById('result').innerHTML=(num1+num2)/2;
 			}
+			function product ()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1*num2;
+			}
+			function difference()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1-num2;
+			}
+			function ratio()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1/num2;
+			}
+			function exponentially()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1**num2;
+			}
+			function log()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=Math.log(num1)/Math.log(num2);
+			}
 		</script>
 	</head>
 	<body>
@@ -28,6 +53,21 @@
 			</button>
 			<button onclick="average()">
 			average
+			</button>
+			<button onclick="product()">
+			product
+			</button>
+			<button onclick="difference()">
+			difference
+			</button>
+			<button onclick="ratio()">
+			ratio
+			</button>
+			<button onclick="exponentially()">
+			exponentially
+			</button>
+			<button onclick="log()">
+			log
 			</button>
 			<p id="result">
 			</p>
